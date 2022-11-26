@@ -14,8 +14,7 @@ from sklearn.preprocessing import StandardScaler
 def load_dataset(dataset_path):
 	data = pd.read_csv(dataset_path)
 	df = pd.DataFrame(data)
-
-	return df
+    return df
 
 def dataset_stat(dataset_df):
 	n_feats = dataset_df.loc[:,dataset_df.columns!="target"].shape[1]
